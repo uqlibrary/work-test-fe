@@ -3,44 +3,52 @@
 These simple tasks should demonstrate your basic understanding and skills in PHP and javascript.
 
 - read all instructions first
-- implement each test in its own repo on github
 - send us links to your repo when you're done
 
 ## Frontend test: Javascript app
 
 UQ Library provides an open API allowing users to get library data (eg library opening hours, computer availability, etc) for example:
- - http://app.library.uq.edu.au/api/v2/library_hours - [api doc](https://)
- - http://app.library.uq.edu.au/api/computer_availability - [api doc](https://)
+ - http://app.library.uq.edu.au/api/v2/library_hours - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/library_hours.md)
+ - http://app.library.uq.edu.au/api/computer_availability - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/computers_availability.md)
  
 Construct a javascript application (using AngularJS/ES6) allowing users to explore these objects:
-- user should be able to view a list of libraries 
-- user should be able to filter libraries by name
-- user should be able to view opening hours for the selected library
-- user should be able to view available computers in the selected library
+
+- as a user I should be able to view a list of libraries 
+- as a user I should be able to filter libraries by name
+- as a user I should be able to view opening hours for a selected library
+- as a user I should be able to view available computers in the selected library
+
 - library details should be accessible by route /#/{library id}
-- create a new library form with dynamic validation which has following fields:
+- as a user I should be able to create a new library by clicking on a 'New library' button
+  New library form should be accessible by a route /#/new
+  New library form should contain the following fields with dynamic validation:
   - library id - numbers only
   - library short name - strictly 5 characters 
   - library name - up to 50 characters
   - campus - a selection from St Lucia, Herston, Bundaberg, PACE, Mater 
-- new library form should have a save button (which triggers validation or is disabled if validation is failing)
-- new library form should display cancel button which takes user back to the list of libraries
-- new library form should be accessible by a route #/new
   
+  New library form should contain the following:
+  - a save button, which:
+    - triggers validation or is disabled if validation is failing
+    -  mocks form submission and displays success message
+  - a cancel button which takes user back to the list of libraries
+
 - any other creative use of data!
 
 ### Technical requirements
 
-- application must respond to mobile
+- use Angular v1.5 
 - use a CSS framework for styling - preferred [Angular Material] (https://material.angularjs.org/latest/)
+- add unit/e2e testing (100% coverage is not required)
+- application must respond to mobile
 - should work in evergreen browsers (don't worry about old versions of IE)
 - use any build tools you feel are necessary but all source code must be provided in a readable format
 - an http server may be used if required
-- add unit/e2e testing
 
 ## Criteria
 
 - code quality
+- design and layout
 - documentation
 - testing
 
