@@ -48,20 +48,20 @@ Construct a javascript application (using AngularJS/ES6) allowing users to explo
 ## Criteria
 
 - code quality
-- design and layout
-- documentation
+- design, layout and usability
+- documentation 
 - testing
 
-## Extra credit
+## Provide comments 
 
-- comment on WCAG 2.0 AA compliance considerations
-- comment on SEO considerations
-- provide estimation of how long would it take you to implement each mini-app, comment on how long it took you to implement it
+- on WCAG 2.0 AA compliance considerations
+- on SEO considerations
+- on estimation of how long would it take you to implement each mini-app, comment on how long it took you to implement it
 - application deployment (provide URL to your deployed application, eg heroku, github io, or provide steps how to run it locally)
-- comment on how you'd optimise your applications on server
-- comment how you'd scale your applications
-- comment on any issues you have come across
-- which AWS services would you use for deployment of your application or how would you deploy this application on premise 
+- on how you'd optimise your applications on server
+- on how you'd scale your applications
+- on any issues you have come across
+- on which AWS services would you use for deployment of your application or how would you deploy this application on premise 
  
 
 
