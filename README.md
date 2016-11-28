@@ -62,6 +62,7 @@ Construct a javascript application (using AngularJS/ES6) allowing users to explo
 - on how you'd scale your applications
 - on any issues you have come across
 - on which AWS services would you use for deployment of your application or how would you deploy this application on premise 
+- if you have ReactJS experience, in your opinion what's the difference between AngularJS and ReactJS, which one do you prefer? 
  
 
 
