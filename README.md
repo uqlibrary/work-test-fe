@@ -37,8 +37,8 @@ Construct a javascript application (using AngularJS/ES6) allowing users to explo
 
 ### Technical requirements
 
-- use Angular v1.5 
-- use a CSS framework for styling - preferred [Angular Material] (https://material.angularjs.org/latest/)
+- use Angular v1.5 or ReactJs
+- use a CSS framework for styling - preferred [Angular Material] (https://material.angularjs.org/latest/) or [Material UI] (http://www.material-ui.com/#/)
 - add unit/e2e testing (100% coverage is not required)
 - application must respond to mobile
 - should work in evergreen browsers (don't worry about old versions of IE)
