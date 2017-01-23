@@ -11,7 +11,7 @@ UQ Library provides an open API allowing users to get library data (eg library o
  - http://app.library.uq.edu.au/api/v2/library_hours - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/library_hours.md)
  - http://app.library.uq.edu.au/api/computer_availability - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/computers_availability.md)
  
-Construct a javascript application (using AngularJS/ES6) allowing users to explore these objects:
+Construct a javascript application (using ReactJS/ES6) allowing users to explore these objects:
 
 - as a user I should be able to view a list of libraries 
 - as a user I should be able to filter libraries by name
@@ -37,8 +37,8 @@ Construct a javascript application (using AngularJS/ES6) allowing users to explo
 
 ### Technical requirements
 
-- use Angular v1.5 or ReactJs
-- use a CSS framework for styling - preferred [Angular Material] (https://material.angularjs.org/latest/) or [Material UI] (http://www.material-ui.com/#/)
+- use ReactJs and Redux
+- use a CSS framework for styling - preferred [Material UI] (http://www.material-ui.com/#/)
 - add unit/e2e testing (100% coverage is not required)
 - application must respond to mobile
 - should work in evergreen browsers (don't worry about old versions of IE)
@@ -62,7 +62,7 @@ Construct a javascript application (using AngularJS/ES6) allowing users to explo
 - on how you'd scale your applications
 - on any issues you have come across
 - on which AWS services would you use for deployment of your application or how would you deploy this application on premise 
-- if you have ReactJS experience, in your opinion what's the difference between AngularJS and ReactJS, which one do you prefer? 
+- if you have AngularJS experience, in your opinion what's the difference between AngularJS and ReactJS, which one do you prefer? 
  
 
 
