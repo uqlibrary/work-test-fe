@@ -2,7 +2,7 @@
 
 ## Resource URI
 
-    https://app.library.uq.edu.au/api/computer_availability
+    https://api.library.uq.edu.au/v1/computer_availability
 
 ## Resource Properties
 
@@ -17,17 +17,18 @@
 
 Returns the computer availability in libraries.
 
-An optional query parameter can be added for JSONP requests
-([read more](https://github.com/uqlibrary/uqlapp/blob/master/docs/api/jsonp-callback.md)):
+An optional query parameter can be added for JSONP requests (to avoid CORS issues):
+The parameter provided must be a [valid javascript identifier](http://www.geekality.net/2011/08/03/valid-javascript-identifier/)
+and must also be less than 25 chars in length.
 
-    https://app.library.uq.edu.au/api/computer_availability?callback=aCallbackFn
+    https://api.library.uq.edu.au/v1/computer_availability?callback=aCallbackFn
 
 Example usage:
 
 ```
 curl \
   -H "Content-Type: application/json" \
-  https://app.library.uq.edu.au/api/computer_availability
+  https://api.library.uq.edu.au/v1/computer_availability
 ```
 
 If the request is successful a HTTP 200 response is returned with the following response body:

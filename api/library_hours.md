@@ -1,8 +1,8 @@
-# REST API: Library Hours V2
+# REST API: Library Hours
 
 ## Resource URI
 
-    https://app.library.uq.edu.au/api/v2/library_hours/{mode}
+    https://api.library.uq.edu.au/v1/library_hours/{mode}
 
 ## Parameters
 
@@ -107,20 +107,22 @@ Week object:
 
 Returns an array of library hours in selected view mode {code}.
 
-An optional query parameter can be added for JSONP requests
-([read more](https://github.com/uqlibrary/uqlapp/blob/master/docs/api/jsonp-callback.md)):
+An optional query parameter can be added for JSONP requests (to avoid CORS issues):
+The parameter provided must be a [valid javascript identifier](http://www.geekality.net/2011/08/03/valid-javascript-identifier/)
+and must also be less than 25 chars in length.
 
-    https://app.library.uq.edu.au/api/v2/library_hours/{mode}?callback=aCallbackFn
+    https://api.library.uq.edu.au/v1/library_hours/{mode}?callback=aCallbackFn
+
 
 Example usage:
 
 ```
 curl \
   -H "Content-Type: application/json" \
-  https://app.library.uq.edu.au/api/v2/library_hours/day
+  https://api.library.uq.edu.au/v1/library_hours/day
 ```
 
-If the request is successful a HTTP 200 response is returned with the following response body ([Complete Api Response](https://sirius.library.uq.edu.au/libshare/ISRS/All_Teams/API/library_hours/library_hours_v2_day.json)):
+If the request is successful a HTTP 200 response is returned with the following response body:
 
 ```json
 {
@@ -181,10 +183,10 @@ If the request is successful a HTTP 200 response is returned with the following 
 ```
 curl \
   -H "Content-Type: application/json" \
-  https://app.library.uq.edu.au/api/v2/library_hours/week
+  https://api.library.uq.edu.au/v1/library_hours/week
 ```
 
-If the request is successful a HTTP 200 response is returned with the following response body ([Complete Api Response](https://sirius.library.uq.edu.au/libshare/ISRS/All_Teams/API/library_hours/library_hours_v2_week.json)):
+If the request is successful a HTTP 200 response is returned with the following response body:
 
 ```json
 {

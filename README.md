@@ -8,8 +8,8 @@ These simple tasks should demonstrate your basic understanding and skills in PHP
 ## Frontend test: Javascript app
 
 UQ Library provides an open API allowing users to get library data (eg library opening hours, computer availability, etc) for example:
- - http://app.library.uq.edu.au/api/v2/library_hours - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/library_hours.md)
- - http://app.library.uq.edu.au/api/computer_availability - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/computers_availability.md)
+ - https://api.library.uq.edu.au/v1/library_hours - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/library_hours.md)
+ - https://api.library.uq.edu.au/v1/computer_availability - [api doc](https://github.com/uqlibrary/work-test-fe/blob/master/api/computers_availability.md)
  
 Construct a javascript application (using ReactJS/ES6) allowing users to explore these objects:
 
